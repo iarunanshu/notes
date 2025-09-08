@@ -86,3 +86,43 @@ class Solution {
 ```
 
 **Example:** `[2,2,1,1,1,2,2]` → `2` (appears 4 times > 7/2)
+
+
+## Remove Duplicates from Sorted Array (LeetCode #26)
+
+### Approach: **Two Pointer Technique**
+- Use pointer `temp` to track position for next unique element
+- Compare each element with previous one (array is sorted)
+- Place unique elements at the front, return count of unique elements
+
+### Complexity:
+- **Time:** O(n) - Single pass through array
+- **Space:** O(1) - In-place modification
+
+### Key Points:
+- ✅ Works only on **sorted array** (duplicates are adjacent)
+- ✅ Returns the count of unique elements
+- ✅ First `temp` elements of modified array contain unique values
+
+### Code (Fixed):
+```java
+class Solution {
+    public int removeDuplicates(int[] nums) {
+        int temp = 1;  // pointer for next unique element position
+        
+        // Start from index 1, compare with previous element
+        for(int i = 1; i < nums.length; i++) {
+            if(nums[i] != nums[i-1]) {
+                nums[temp] = nums[i];  // place unique element
+                temp++;    
+            }
+        }
+        
+        return temp;  // return count of unique elements
+    }
+}
+```
+
+**Example:** `[1,1,2,2,3]` → `[1,2,3,_,_]` returns `3`
+
+**Note:** The array after first `temp` positions can have any values (LeetCode doesn't check them)
