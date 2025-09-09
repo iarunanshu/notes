@@ -126,3 +126,47 @@ class Solution {
 **Example:** `[1,1,2,2,3]` → `[1,2,3,_,_]` returns `3`
 
 **Note:** The array after first `temp` positions can have any values (LeetCode doesn't check them)
+
+
+## Best Time to Buy and Sell Stock (LeetCode #121)
+
+### Approach: **Single Pass - Track Min Price & Max Profit**
+- Track minimum price seen so far (best day to buy)
+- Calculate profit if selling at current price
+- Keep maximum profit encountered
+- Update minimum price as we go
+
+### Complexity:
+- **Time:** O(n) - Single pass through array
+- **Space:** O(1) - Only two variables used
+
+### Key Points:
+- ✅ Can only buy once and sell once
+- ✅ Must buy before selling (no shorting)
+- ✅ Greedy approach: always consider cheapest buy price so far
+
+### Code:
+```java
+class Solution {
+    public int maxProfit(int[] prices) {
+        int min = prices[0];     // minimum price seen so far
+        int profit = 0;          // maximum profit possible
+        
+        for (int i = 0; i < prices.length; i++) {
+            // Calculate profit if we sell today
+            profit = Math.max(profit, prices[i] - min);
+            // Update minimum buy price
+            min = Math.min(min, prices[i]);
+        }
+        
+        return profit;
+    }
+}
+```
+
+**Example:** `[7,1,5,3,6,4]` → `5` (buy at 1, sell at 6)
+
+**Visual:**
+```
+Buy at min=1, Sell at 6 → Profit = 5
+```
