@@ -170,3 +170,55 @@ class Solution {
 ```
 Buy at min=1, Sell at 6 → Profit = 5
 ```
+
+
+## Rotate Array (LeetCode #189)
+
+### Approach: **Reversal Algorithm (3-Step Reverse)**
+1. Reverse entire array
+2. Reverse first k elements
+3. Reverse remaining n-k elements
+
+### Complexity:
+- **Time:** O(n) - Three passes, each O(n)
+- **Space:** O(1) - In-place rotation
+
+### Key Points:
+- ✅ Handle `k > array.length` using modulo: `k = k % n`
+- ✅ Right rotation by k positions
+- ✅ Trick: Multiple reversals achieve rotation without extra space
+
+### Code:
+```java
+class Solution {
+    public void rotate(int[] nums, int k) {
+        k = k % nums.length;  // handle k > length
+        if(nums.length <= 1)
+            return;
+
+        reverse(nums, 0, nums.length - 1);  // reverse entire array
+        reverse(nums, 0, k - 1);            // reverse first k elements
+        reverse(nums, k, nums.length - 1);  // reverse remaining elements
+    }
+    
+    public void reverse(int[] arr, int i, int j) {
+        while(i < j) {
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+            i++;
+            j--;
+        }
+    }
+}
+```
+
+**Example:** `[1,2,3,4,5,6,7]`, k=3 → `[5,6,7,1,2,3,4]`
+
+**Step-by-step:**
+```
+Original:     [1,2,3,4,5,6,7]
+Step 1:       [7,6,5,4,3,2,1]  (reverse all)
+Step 2:       [5,6,7,4,3,2,1]  (reverse first 3)
+Step 3:       [5,6,7,1,2,3,4]  (reverse last 4)
+```
