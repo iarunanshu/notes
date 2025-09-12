@@ -222,4 +222,62 @@ Step 1:       [7,6,5,4,3,2,1]  (reverse all)
 Step 2:       [5,6,7,4,3,2,1]  (reverse first 3)
 Step 3:       [5,6,7,1,2,3,4]  (reverse last 4)
 ```
-quetion 
+
+
+## Product of Array Except Self (LeetCode #238)
+
+### Approach: **Prefix and Suffix Products**
+- Build prefix array: product of all elements before index i
+- Build suffix array: product of all elements after index i
+- Result[i] = prefix[i] × suffix[i]
+
+### Complexity:
+- **Time:** O(n) - Three passes through array
+- **Space:** O(n) - Two auxiliary arrays (can be optimized to O(1))
+
+### Key Points:
+- ✅ Cannot use division (handle zeros case)
+- ✅ `pre[i]` = product of all elements from 0 to i-1
+- ✅ `post[i]` = product of all elements from i+1 to n-1
+- ✅ Can optimize space by using output array and single variable
+
+### Code:
+```java
+class Solution {
+    public int[] productExceptSelf(int[] nums) {
+        int n = nums.length;
+        int[] pre = new int[n];   // prefix products
+        int[] post = new int[n];  // suffix products
+        
+        pre[0] = 1;      // no elements before index 0
+        post[n-1] = 1;   // no elements after last index
+        
+        // Build prefix products
+        for(int i = 1; i < n; i++) {
+            pre[i] = pre[i-1] * nums[i-1];
+        }
+        
+        // Build suffix products
+        for(int i = n-2; i >= 0; i--) {
+            post[i] = post[i+1] * nums[i+1];
+        }
+        
+        // Calculate result
+        for(int i = 0; i < n; i++) {
+            nums[i] = pre[i] * post[i];
+        }
+        
+        return nums;
+    }
+}
+```
+
+**Example:** `[1,2,3,4]` → `[24,12,8,6]`
+
+**Visualization:**
+```
+nums:  [1,  2,  3,  4]
+pre:   [1,  1,  2,  6]  (products before i)
+post:  [24, 12, 4,  1]  (products after i)
+result:[24, 12, 8,  6]  (pre[i] × post[i])
+```
