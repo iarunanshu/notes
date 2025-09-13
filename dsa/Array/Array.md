@@ -330,3 +330,58 @@ Prices: [7, 1, 5, 3, 6, 4]
 ```
 
 **Key Insight:** Every upward slope contributes to total profit!
+
+
+## Number of Zero-Filled Subarrays (LeetCode #2348)
+
+### Approach: **Mathematical Formula for Consecutive Zeros**
+- Count consecutive zeros
+- When non-zero found or array ends, calculate subarrays using formula: `n*(n+1)/2`
+- For n consecutive zeros, total subarrays = 1+2+3+...+n = n*(n+1)/2
+
+### Complexity:
+- **Time:** O(n) - Single pass through array
+- **Space:** O(1) - Only counters used
+
+### Key Points:
+- ✅ Formula: n consecutive zeros → `n*(n+1)/2` subarrays
+- ✅ Reset counter when non-zero element found
+- ✅ Don't forget to add remaining zeros after loop ends
+- ✅ Use `long` to avoid integer overflow
+
+### Code:
+```java
+class Solution {
+    public long zeroFilledSubarray(int[] nums) {
+        long count = 0;  // count of consecutive zeros
+        long res = 0;    // total subarrays
+        
+        for(int i = 0; i < nums.length; i++) {
+            if(nums[i] == 0)
+                count++;
+            else {
+                // Calculate subarrays from consecutive zeros
+                res += count * (count + 1L) / 2;
+                count = 0;  // reset counter
+            }
+        }
+        
+        // Don't forget remaining zeros at the end
+        res += count * (count + 1L) / 2;
+        return res;
+    }
+}
+```
+
+**Example:** `[1,3,0,0,2,0,0,4]` → `6`
+- First group: [0,0] → 3 subarrays
+- Second group: [0,0] → 3 subarrays
+- Total = 6
+
+**Formula Visualization:**
+```
+3 consecutive zeros: [0,0,0]
+Subarrays: [0], [0], [0], [0,0], [0,0], [0,0,0]
+Count = 3*(3+1)/2 = 6
+```
+
