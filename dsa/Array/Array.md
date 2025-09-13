@@ -281,3 +281,52 @@ pre:   [1,  1,  2,  6]  (products before i)
 post:  [24, 12, 4,  1]  (products after i)
 result:[24, 12, 8,  6]  (pre[i] × post[i])
 ```
+
+## Best Time to Buy and Sell Stock II (LeetCode #122)
+
+### Approach: **Greedy - Capture Every Upward Movement**
+- Buy and sell whenever there's profit (next day price is higher)
+- Sum all positive differences between consecutive days
+- Equivalent to holding stock through all upward trends
+
+### Complexity:
+- **Time:** O(n) - Single pass through array
+- **Space:** O(1) - Only using one variable
+
+### Key Points:
+- ✅ **Multiple transactions allowed** (unlike Stock I)
+- ✅ Can't hold multiple stocks (must sell before buying again)
+- ✅ Greedy: capture every price increase
+- ✅ Peak-Valley approach: buy at every valley, sell at every peak
+
+### Code:
+```java
+class Solution {
+    public int maxProfit(int[] arr) {
+        int maxp = 0;
+        
+        // Add profit whenever price increases
+        for(int i = 1; i < arr.length; i++) {
+            if(arr[i] > arr[i-1])
+                maxp += arr[i] - arr[i-1];
+        }
+        
+        return maxp;
+    }
+}
+```
+
+**Example:** `[7,1,5,3,6,4]` → `7`
+- Buy at 1, sell at 5 (profit = 4)
+- Buy at 3, sell at 6 (profit = 3)
+- Total = 7
+
+**Visual:**
+```
+Prices: [7, 1, 5, 3, 6, 4]
+         ↓  ↑  ↓  ↑  ↓
+        Buy→Sell Buy→Sell
+        Profit: 4 + 3 = 7
+```
+
+**Key Insight:** Every upward slope contributes to total profit!
