@@ -385,3 +385,50 @@ Subarrays: [0], [0], [0], [0,0], [0,0], [0,0,0]
 Count = 3*(3+1)/2 = 6
 ```
 
+
+## Increasing Triplet Subsequence (LeetCode #334)
+
+### Approach: **Greedy with Two Pointers**
+- Track smallest (`min`) and middle (`mid`) values seen so far
+- If we find a value greater than both, triplet exists
+- Keep updating min and mid to smallest possible values to maximize chance of finding third element
+
+### Complexity:
+- **Time:** O(n) - Single pass through array
+- **Space:** O(1) - Only two variables used
+
+### Key Points:
+- ✅ Find if `i < j < k` where `nums[i] < nums[j] < nums[k]` exists
+- ✅ Don't need actual indices, just existence
+- ✅ `min` always holds smallest value seen
+- ✅ `mid` holds smallest value greater than some previous min
+
+### Code:
+```java
+class Solution {
+    public boolean increasingTriplet(int[] nums) {
+        int min = Integer.MAX_VALUE;  // smallest element
+        int mid = Integer.MAX_VALUE;  // second smallest after min
+        
+        for(int i = 0; i < nums.length; i++) {
+            if(nums[i] <= min)
+                min = nums[i];        // update smallest
+            else if(nums[i] <= mid)
+                mid = nums[i];        // update middle
+            else
+                return true;          // found third element > min & mid
+        }
+        
+        return false;
+    }
+}
+```
+
+**Example:** `[2,1,5,0,4,6]` → `true`
+- min=2, then min=1
+- mid=5 (since 5>1)
+- min=0 (update min, but mid=5 still valid from previous min=1)
+- mid=4 (since 4>0 and 4<5)
+- 6>min and 6>mid → return true
+
+**Key Insight:** `mid` represents that there exists some value before it that's smaller, even if `min` gets updated later!
