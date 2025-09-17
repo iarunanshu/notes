@@ -116,3 +116,56 @@ class Solution {
 ```
 
 **Note:** The third condition should be `if` not `while` for character comparison!
+
+## Longest Common Prefix (LeetCode #14)
+
+### Approach: **Horizontal Scanning with Prefix Reduction**
+- Start with first string as initial prefix
+- For each string, reduce prefix until it matches the beginning
+- Use `indexOf(prefix) == 0` to check if prefix matches start of string
+- Keep removing last character until match found or prefix is empty
+
+### Complexity:
+- **Time:** O(S) where S = sum of all characters in all strings
+- **Space:** O(1) - No extra space (substring reuses string pool)
+
+### Key Points:
+- ✅ `indexOf(prefix) == 0` ensures prefix is at the beginning
+- ✅ Progressively shorten prefix using `substring(0, length-1)`
+- ✅ Early termination when prefix becomes empty
+- ✅ Works by finding common prefix between first string and all others
+
+### Code:
+```java
+class Solution {
+    public String longestCommonPrefix(String[] strs) {
+        if(strs.length == 0)
+            return "";
+        
+        String prefix = strs[0];  // start with first string
+        
+        for(int i = 1; i < strs.length; i++) {
+            // Reduce prefix until it matches beginning of current string
+            while(strs[i].indexOf(prefix) != 0) {
+                prefix = prefix.substring(0, prefix.length() - 1);
+                if(prefix.isEmpty())
+                    return "";
+            }
+        }
+        
+        return prefix;
+    }
+}
+```
+
+**Example:** `["flower","flow","flight"]` → `"fl"`
+
+**Step-by-step:**
+```
+prefix = "flower"
+Compare with "flow":   "flower" → "flowe" → "flow" ✓
+Compare with "flight": "flow" → "flo" → "fl" ✓
+Result: "fl"
+```
+
+**Key Insight:** `indexOf(prefix) == 0` means prefix starts at index 0 (beginning of string)!
