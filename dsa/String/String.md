@@ -169,3 +169,58 @@ Result: "fl"
 ```
 
 **Key Insight:** `indexOf(prefix) == 0` means prefix starts at index 0 (beginning of string)!
+
+
+## Reverse Words in a String (LeetCode #151)
+
+### Approach: **Split and Reverse**
+- Trim leading/trailing spaces
+- Split by regex `\\s+` (one or more spaces)
+- Iterate words array backwards
+- Build result with StringBuilder
+
+### Complexity:
+- **Time:** O(n) - Split and traverse once
+- **Space:** O(n) - Array of words and StringBuilder
+
+### Key Points:
+- ✅ `trim()` removes leading/trailing spaces
+- ✅ `\\s+` regex handles multiple spaces between words
+- ✅ StringBuilder for efficient string concatenation
+- ✅ Add space between words except after last word
+
+### Code:
+```java
+class Solution {
+    public String reverseWords(String s) {
+        String[] st = s.trim().split("\\s+");  // split by spaces
+        StringBuilder str = new StringBuilder();
+        
+        // Traverse backwards
+        for(int i = st.length - 1; i >= 0; i--) {
+            str.append(st[i]);
+            if(i != 0) {
+                str.append(" ");  // space between words
+            }
+        }
+        
+        return str.toString();
+    }
+}
+```
+
+**Example:**
+- `"  the sky is  blue  "` → `"blue is sky the"`
+- `"hello world"` → `"world hello"`
+
+**Process:**
+```
+Input:  "  the sky is  blue  "
+Trim:   "the sky is  blue"
+Split:  ["the", "sky", "is", "blue"]
+Reverse: "blue is sky the"
+```
+
+**Regex Note:**
+- `\\s+` matches one or more whitespace characters
+- Handles multiple spaces between words automatically
