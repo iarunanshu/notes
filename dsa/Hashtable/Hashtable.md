@@ -94,3 +94,64 @@ Bucket[2] → null
 ```
 
 **Key Insight:** Dummy head node eliminates edge cases for insert/delete at head!
+
+
+## Maximum Number of Balloons (LeetCode #1189)
+
+### Approach: **Character Frequency Counting**
+- Count frequency of all characters in text
+- "balloon" requires: b(1), a(1), l(2), o(2), n(1)
+- Find limiting factor: minimum possible formations
+- For 'l' and 'o': divide count by 2 (they appear twice in "balloon")
+
+### Complexity:
+- **Time:** O(n) - Single pass through string
+- **Space:** O(1) - Fixed size array (26 characters)
+
+### Key Points:
+- ✅ "balloon" needs: 1b, 1a, 2l, 2o, 1n
+- ✅ Divide count of 'l' and 'o' by 2
+- ✅ Minimum count determines max balloons
+- ✅ Use array indexing: `c - 'a'` for lowercase letters
+
+### Code:
+```java
+public class Solution {
+    public int maxNumberOfBalloons(String text) {
+        // Frequency array for all lowercase characters
+        int[] count = new int[26];
+        for (char c : text.toCharArray()) {
+            count[c - 'a']++;
+        }
+        
+        // Calculate the minimum number of "balloon" we can form
+        int minBalloons = Integer.MAX_VALUE;
+        
+        // Check against required characters
+        minBalloons = Math.min(minBalloons, count['b' - 'a']);     // need 1 'b'
+        minBalloons = Math.min(minBalloons, count['a' - 'a']);     // need 1 'a'
+        minBalloons = Math.min(minBalloons, count['l' - 'a'] / 2); // need 2 'l'
+        minBalloons = Math.min(minBalloons, count['o' - 'a'] / 2); // need 2 'o'
+        minBalloons = Math.min(minBalloons, count['n' - 'a']);     // need 1 'n'
+        
+        return minBalloons;
+    }
+}
+```
+
+**Example:**
+- `"loonbalxballpoon"` → `2`
+- b=2, a=2, l=4, o=4, n=2
+- Min(2, 2, 4/2, 4/2, 2) = 2
+
+**Visual:**
+```
+"balloon" requires:
+b: 1 × n times
+a: 1 × n times  
+l: 2 × n times
+o: 2 × n times
+n: 1 × n times
+
+Find max n where all requirements are met!
+```
