@@ -155,3 +155,58 @@ n: 1 × n times
 
 Find max n where all requirements are met!
 ```
+
+
+## Number of Good Pairs (LeetCode #1512)
+
+### Approach: **HashMap with Running Count**
+- For each number, count how many times we've seen it before
+- If seen k times before, we can form k new pairs with current occurrence
+- Add k to result, then increment frequency
+- Formula: For n occurrences of a number → n*(n-1)/2 total pairs
+
+### Complexity:
+- **Time:** O(n) - Single pass through array
+- **Space:** O(n) - HashMap for frequencies
+
+### Key Points:
+- ✅ Good pair: `nums[i] == nums[j]` and `i < j`
+- ✅ When we see a number, it forms pairs with ALL previous occurrences
+- ✅ Running count avoids need for combination formula
+- ✅ Increment frequency AFTER adding to count
+
+### Code:
+```java
+class Solution {
+    public int numIdenticalPairs(int[] nums) {
+        Map<Integer, Integer> mp = new HashMap<>();
+        int count = 0;
+        
+        for(int i : nums) {
+            if(mp.containsKey(i)) {
+                count += mp.get(i);        // add previous occurrences
+                mp.put(i, mp.get(i) + 1);  // increment frequency
+            }
+            else {
+                mp.put(i, 1);              // first occurrence
+            }
+        }
+        
+        return count;
+    }
+}
+```
+
+**Example:** `[1,2,3,1,1,3]` → `4`
+
+**Step-by-step:**
+```
+[1]: mp={1:1}, count=0
+[2]: mp={1:1, 2:1}, count=0
+[3]: mp={1:1, 2:1, 3:1}, count=0
+[1]: found 1, count+=1, mp={1:2, 2:1, 3:1}, count=1
+[1]: found 2, count+=2, mp={1:3, 2:1, 3:1}, count=3
+[3]: found 1, count+=1, mp={1:3, 2:1, 3:2}, count=4
+```
+
+**Key Insight:** Each new occurrence pairs with ALL previous occurrences of the same number!
