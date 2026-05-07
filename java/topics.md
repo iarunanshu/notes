@@ -1,0 +1,646 @@
+# Course Topics
+
+## Primitive Data Types
+- Introduction to Java Keywords
+- Introduction to Primitive Data types in Java - Part 1
+- Introduction to Primitive Data types in Java - Part 2
+- Syntax to declare primitive data types & store data using them
+- Demo of declaring primitive data types & store data using them
+- A small adventure on Java Primitive Data Types
+- How to name a java variable
+- Case Styles in programming
+- Deep dive on boolean primitive data type
+- Boolean Fun: Java's True or False Adventures
+- Deep dive on char primitive data type - Part 1
+- Deep dive on char primitive data type - Part 2
+- Deep dive on char primitive data type - Part 3
+- Charmed Coding: Fun with Java's Char Data Type
+- Introduction to integer primitive data types
+- Demo of byte, short, int and long primitive data types
+- Demo of Overflow and Underflow
+- int overflow
+- Introduction to floating data types
+- Demo of float and double primitive data types - Part 1
+- Demo of float and double primitive data types - Part 2
+- Using underscore in numeric literals
+- Creating a float number with underscores
+- Other formats supported by integer & floating data types
+- Demo of octal number format in Java
+- Demo of hexa number format in Java
+- Demo of binary number format in Java
+- Type casting in Java
+- Demo of implicit and explicit casting - Part 1
+- Demo of implicit and explicit casting - Part 2
+- Trying explicit casting
+- Introduction to String in Java
+- Demo of String in Java
+- Joke Of the Day using a String variable
+- DETAILS OF SOURCE CODE AND PDF CONTENT
+
+## Java Program Life Cycle
+- Introduction to life cycle of a Java program
+- What is JDK, JRE, JVM
+- How Java became a platform independent language - Part 1
+- How Java became a platform independent language - Part 2
+- Quick knowledge check on Java life cycle & it's components
+- Introduction to Java program code structure
+- Writing first Java class, compiling & running it
+- Launch Single-File Source-Code Programs
+- Compact Source Files and Instance Main Methods
+- IntelliJ IDEA Ultimate
+- Introduction to IDE & IntelliJ IDEA
+- Create first Java project in IntelliJ & set up a theme
+- Writing first Java class in IntelliJ
+- Generate a Joke using a Java class, main method and String variable
+- DETAILS OF SOURCE CODE AND PDF CONTENT
+
+## Object-Oriented Programming Basics
+- Java supports Object-oriented programming (OOP)
+- So, what is a Java class
+- Demo of creating a Java class
+- Declaring fields in a Java class - Theory
+- Declaring fields in a Java class - Demo
+- Introduction to methods in Java - Part 1
+- Introduction to methods in Java - Part 2
+- Demo of Java methods - Part 1
+- Demo of Java methods - Part 2
+- Introduction to method signature
+- Purpose of a return statement in Java methods
+- Syntax of method invocation in Java
+- Let's say hi to main method again
+- How to create & initialize Java objects - Theory
+- How to create & initialize Java objects - Demo
+- Introduction to Constructor in Java
+- Demo of Constructor in Java & introduction to debugging
+- Problem with default or no-args constructor
+- Constructor Overloading in Java
+- Constructor chaining in Java
+- Usage of return statement in constructor
+- Instance Initialization Block in Java class - Part 1
+- Instance Initialization Block in Java class - Part 2
+- Introduction to static variables in Java - Theory
+- Introduction to static variables in Java - Demo
+- How to define constant final static variables
+- Differences between static & instance variables
+- Introduction to static methods in Java - Theory
+- Demo of static methods in Java - Part 1
+- Demo of static methods in Java - Part 2
+- Static Initialization Block in Java class - Part 1
+- Static Initialization Block in Java class - Part 2
+- Debugging of method invocations in IntelliJ
+- Where does Java store classes, objects, variables, methods
+- Deep dive on Heap memory and stack memory
+- Demo of Heap memory and stack memory in IntelliJ
+- Introduction to null in Java
+- Object Destruction and Garbage collection in Java
+- Class vs Object vs Instance vs Reference
+- What is encapsulation in Java
+- DETAILS OF SOURCE CODE AND PDF CONTENT
+
+## Strings
+- Introduction to agenda of the section
+- Introduction to String Pool in Java - Theory
+- Demo of String Pool in Java
+- The intern method in String
+- The concat method in String
+- Let's concat Strings
+- Escape sequence character & Unicode char values in String
+- Finding the length of a String
+- Comparing Strings in Java - Part 1
+- Comparing Strings in Java - Part 2
+- Compare two Strings
+- Fetching a character at an index in String
+- CharAt challenge
+- Checking if a String is empty
+- Find if a String is empty or not
+- Changing the case in String
+- Convert a String content into uppercase
+- Converting values as String
+- Convert a float into a String
+- Searching for a value in String
+- Searching for a value in String
+- Trimming a String
+- Fetching Substring from a String
+- Fetching Substring from a String
+- Replacing a part of a String
+- Replacing a part of a String
+- Splitting Strings
+- Joining Strings
+- The format() method in String
+- System.out.printf() method
+- Trying printf() method
+- Understanding how String objects are immutable
+- How to create mutable strings in Java
+- Demo of creating mutable strings in Java
+- Palindrome assignment
+- Text Block in Java
+- Converting String to primitive data type values - Theory
+- Converting String to primitive data type values - Demo
+- Convert String to double data type
+- DETAILS OF SOURCE CODE AND PDF CONTENT
+
+## Operators
+- Introduction to Operators & Operands in Java
+- Operators categorisation in Java
+- Expressions in Java
+- Assignment Operator in Java - Part 1
+- Assignment Operator in Java - Part 2
+- Introduction to Arithmetic Operators in Java
+- Addition Operator in Java - Part 1
+- Addition Operator in Java - Part 2
+- Calculating sum using Addition Operator
+- String Concatenation Operator
+- String Concatenation
+- Division Operator in Java
+- Modulus Operator in Java
+- Unary plus and minus operators
+- Compound Arithmetic Assignment Operators in Java
+- Increment and Decrement operators in Java - Part 1
+- Increment and Decrement operators in Java - Part 2
+- Introduction to Relational Operators in Java
+- Equality Operator in Java - Part 1
+- Equality Operator in Java - Part 2
+- Inequality Operator in Java
+- Greater than, Greater than or equal, Less than, Less than or equal operators
+- Introduction to Logical Operators in Java
+- Logical NOT operator in Java
+- Logical Short-Circuit AND, Logical AND operators in Java - Theory
+- Logical Short-Circuit AND, Logical AND operators in Java - Demo
+- Logical Short-Circuit OR, Logical OR operators in Java - Theory
+- Logical Short-Circuit OR, Logical OR operators in Java - Demo
+- Logical XOR operator in Java
+- Compound Logical Assignment Operators in Java
+- Bitwise Operators in Java
+- Bitwise NOT operator or 1's complement in Java
+- Bitwise AND operator in Java
+- Bitwise OR operator in Java
+- Bitwise XOR operator in Java
+- Left Shift operator in Java
+- Signed Right Shift operator in Java
+- Unsigned Right Shift operator in Java
+- Compound assignment bitwise operators in Java
+- Ternary or Conditional operator in Java
+- Introduction to Java operators Precedence & Associativity
+- Details of Java operators Precedence & Associativity
+- DETAILS OF SOURCE CODE AND PDF CONTENT
+
+## Control Flow Statements
+- Introduction to Control flow statements in Java
+- Deep dive on if, else if, else statements in Java - Theory
+- Demo of if, else if, else statements in Java - Part 1
+- Demo of if, else if, else statements in Java - Part 2
+- Check if a number is even or odd using modulus operator and if, else statements
+- Finding if it is raining using Logical NOT operator and if, else statements
+- Nested if- else if - else statements
+- Funny food decision using Logical AND, OR operator and if, else statements
+- Ternary operator in the place of if-else statement
+- Rank Calculator using Ternary operator
+- Deep dive on switch case statement - Theory
+- Deep dive on switch case statement - Demo
+- Deep dive on switch expression - Theory
+- Deep dive on switch expression - Demo
+- Mood Analyzer using Switch expression
+- Funny memes around if and switch statements
+- Deep dive on while statement - Theory
+- Deep dive on while statement - Demo
+- Sum of first 100 numbers using while loop
+- Deep dive on do while statement
+- Calculate Factorial using do while statement
+- Deep dive on for loop - Theory
+- Deep dive on for loop - Demo
+- Sum of numbers using for loop
+- Deep dive on nested for loops
+- break statement - Theory
+- break statement - Demo
+- Find Divisible Number using while loop and break statement
+- continue statement
+- return statement
+- Local variables & Scope - Theory
+- Local variables & Scope - Demo
+- DETAILS OF SOURCE CODE AND PDF CONTENT
+
+## Packages and Access Modifiers
+- Introduction to the structuring of code in Java projects
+- Introduction to packages & benefits of them
+- Creating a package - Part 1
+- Creating a package - Part 2
+- Rules & standards to name a package
+- Using package members with import statement
+- The great java.lang package
+- The static import statements
+- Important points about packages & imports
+- Introduction to access modifiers
+- Demo of access modifiers for java classes
+- Demo of access modifiers for methods, fields in classes
+- access modifiers real life analogies
+- Deep dive on POJO classes - Part 1
+- Deep dive on POJO classes - Part 2
+- DETAILS OF SOURCE CODE AND PDF CONTENT
+
+## Inheritance
+- Agenda of the section & quick revision of OOPs concepts
+- Introduction to Inheritance in Java
+- Deep dive on Inheritance - Theory
+- Inheritance Demo - Part 1
+- Inheritance Demo - Part 2
+- Object class is the default Superclass
+- is-a & has-a relationships in Java
+- What a subclass inherits from its superclass
+- Introduction to upcasting in Java
+- Demo of upcasting - Part 1
+- Demo of upcasting - Part 2
+- Introduction to downcasting & it's demo
+- instanceof Operator
+- instanceof Operator with pattern matching
+- Static Binding and Dynamic Binding in Java
+- What is Polymorphism in Java
+- Method Overriding - Theory
+- Method Overriding - Demo
+- Demo of dynamic polymorphism using method overriding
+- super keyword to invoke super class methods from sub class
+- Method Overloading - Theory
+- Method Overloading - Demo
+- Method overriding vs Method overloading
+- Method hiding in Java Inheritance
+- Field hiding in Java Inheritance
+- The story of constructors & Inheritance together - Part 1
+- The story of constructors & Inheritance together - Part 2
+- this and super keywords in Java
+- Types of Inheritance in Java
+- abstract methods and classes - Part 1
+- abstract methods and classes - Part 2
+- final keyword in Java
+- sealed classes & interfaces
+- Funny memes of Inheritance
+- DETAILS OF SOURCE CODE AND PDF CONTENT
+
+## Interfaces
+- Introduction to Interfaces
+- How to create an interface
+- Implementing a interface in Java
+- Advantages of interfaces
+- Constant Field Declarations in interface
+- Different method declarations allowed in interface
+- Why we need default methods in interfaces
+- How to build default methods in interfaces
+- How to build static methods in interfaces
+- Multiple Inheritance using interfaces - Part 1
+- Multiple Inheritance using interfaces - Part 2
+- Interface defines a new type
+- Marker Interface
+- Functional Interface
+- Class Vs Abstract Class Vs Interface
+- DETAILS OF SOURCE CODE AND PDF CONTENT
+
+## Arrays
+- What is a Array in Java
+- Declaring & initializing Arrays - Part 1
+- Declaring & initializing Arrays - Part 2
+- Arrays length
+- Multiple String storage using Array
+- Iterate elements of Array using for loop
+- Iterate elements of Array using for-each loop
+- Iterate Animal Sounds array
+- Arrays advantages and disadvantages
+- Copying Arrays using loops
+- Copying Arrays using arraycopy and copyOf methods
+- Converting Arrays
+- Sorting Arrays
+- Searching an Array
+- Filling an Array
+- Introduction to multidimensional or nested arrays
+- Two-Dimensional or 2D Arrays - Theory
+- Two-Dimensional or 2D Arrays - Demo
+- Addition of two matrices using 2D arrays
+- Subtraction of two matrices using 2D arrays
+- Jagged Arrays
+- Three-Dimensional or 3D Arrays
+- Funny memes of Arrays
+- DETAILS OF SOURCE CODE AND PDF CONTENT
+
+## Input/Output
+- Agenda of the section
+- Understanding System.out.println
+- Demo of Java Basic Input
+- Introduction to BufferedReader
+- Demo of BufferedReader
+- BufferedReader examples to identify even number and sum
+- BufferedReader example to identify prime number
+- BufferedReader example to read the file content
+- Arithmetic Operations using BufferedReader
+- Introduction to Scanner & Demo - Part 1
+- Introduction to Scanner & Demo - Part 2
+- Scanner example to read the file content
+- Arithmetic Operations using Scanner
+- Comparison of BufferedReader and Scanner
+- Don't use System.out.println in Production code
+- Logging in Java - Part 1
+- Logging in Java - Part 2
+- DETAILS OF SOURCE CODE AND PDF CONTENT
+
+## Exception Handling
+- Agenda of the section
+- Taste of first Exception
+- try-catch block - Part 1
+- try-catch block - Part 2
+- multiple catch blocks - Part 1
+- multiple catch blocks - Part 2
+- finally block
+- try- with-resources statement
+- Rules while handling exceptions
+- The Exception Hierarchy - Part 1
+- The Exception Hierarchy - Part 2
+- Checked Exceptions
+- Unchecked Exceptions
+- throws keyword
+- throw keyword
+- Differences between throw and throws keyword
+- Exception Propagation
+- Nested try block
+- Custom Checked Exception
+- Custom Unchecked Exception
+- final, finally and finalize
+- Funny memes around exception handling
+- DETAILS OF SOURCE CODE AND PDF CONTENT
+
+## Object Class Methods
+- Introduction to the methods in Object class
+- Deep dive on getClass() in Object class
+- Deep dive on hashCode() in Object class - Part 1
+- Deep dive on hashCode() in Object class - Part 2
+- Deep dive on equals() in Object class
+- Override hashCode() & equals() methods
+- Override hashCode() & equals() methods using IntelliJ
+- Deep dive on toString() in Object class
+- Demo of hashCode(), equals() & toString() methods of String
+- Deep dive on finalize() in Object class
+- Deep dive on clone() in Object class
+- Details about Shallow cloning & Deep cloning - Theory
+- Details about Shallow cloning & Deep cloning - Demo
+- Mutable and Immutable objects - Theory
+- Mutable and Immutable objects - Demo
+- Record classes - Part 1
+- Record classes - Part 2
+- var (local variable type inference) - Part 1
+- var (local variable type inference) - Part 2
+- DETAILS OF SOURCE CODE AND PDF CONTENT
+
+## Wrapper Classes and Collections Introduction
+- Arrays have limitations
+- What are Collections & why they accept only objects
+- Introduction to Wrapper Classes
+- Convert Primitive Type to Wrapper Objects (Boxing)
+- Convert Wrapper Objects into Primitive Types (Unboxing)
+- Autoboxing and unboxing - Theory
+- Autoboxing and unboxing - Demo
+- Caching with valueOf() methods
+- Java Collection Framework Hierarchy
+- DETAILS OF SOURCE CODE AND PDF CONTENT
+
+## List Interface
+- Deep dive on the Collection Interface
+- Deep dive on the Sequenced Collections
+- Deep dive on the List Interface
+- How to create objects of ArrayList
+- Demo of ArrayList
+- Diamond Operator in Java
+- ArrayList performance
+- Creating Immutable Lists
+- Iterate ArrayList using for-each and iterator()
+- Iterate ArrayList using listIterator()
+- ArrayList Operations in Java
+- Sorting ArrayList using sort() methods
+- Sorting ArrayList using custom Comparator
+- Sorting ArrayList of custom data type using Comparable
+- Sort Persons based on age using Comparable
+- Sorting ArrayList of custom data type using Comparator
+- Arrays vs ArrayList
+- DETAILS OF SOURCE CODE AND PDF CONTENT
+
+## LinkedList
+- Introduction of LinkedList
+- How to create objects of LinkedList
+- Demo of LinkedList
+- Iterate LinkedList elements
+- Sorting LinkedList elements
+- LinkedList Operations in Java
+- LinkedList performance
+- ArrayList vs LinkedList
+- Funny memes around LinkedList
+- DETAILS OF SOURCE CODE AND PDF CONTENT
+
+## Generics
+- Introduction to Generics in Java
+- Why we need Generics in Java
+- Generic class in Java - Demo
+- Storage Generic class
+- Generics methods in Java - Demo
+- Generic method to swap array elements
+- Collections with out Generics - Demo
+- Collections without Generics
+- Covariance Demo
+- Subtype or Upper Bound Wildcards
+- Supertype or Lower Bound Wildcards
+- Unbounded Wildcards
+- DETAILS OF SOURCE CODE AND PDF CONTENT
+
+## Map Interface
+- Introduction to Map in Java
+- Demo of HashMap
+- How HashMap Store Key, Value
+- How HashMap retrieve Value
+- HashMap improvements in Java 8
+- Iterating HashMap using keySet() and entrySet()
+- Iterating HashMap using values()
+- HashMap Operations in Java
+- Introduction to TreeMap in Java
+- Demo of TreeMap in Java
+- Demo of LinkedHashMap in Java
+- Creating Immutable Maps
+- DETAILS OF SOURCE CODE AND PDF CONTENT
+
+## Set Interface
+- Introduction to Set in Java
+- Demo of HashSet
+- How HashSet works internally
+- Iterating HashSet
+- Vowel Remover using HashSet
+- Set operations
+- Demo of TreeSet in Java
+- Demo of LinkedHashSet in Java
+- Creating Immutable Sets
+- List vs Set
+- DETAILS OF SOURCE CODE AND PDF CONTENT
+
+## Enums
+- Introduction to Enums
+- Problems with normal Java class constants approach
+- Demo of Enum approach
+- More details about enum - Part 1
+- More details about enum - Part 2
+- Associating Data to Enum Constants
+- Demo of EnumSet and it's important methods
+- Advantages of Enums
+- Calculate Toll using Enums
+- DETAILS OF SOURCE CODE AND PDF CONTENT
+
+## Date and Time API
+- How Java supports Date and Time
+- Why a new Date API introduced in Java 8
+- Demo of java.util.Date - Part 1
+- Demo of java.util.Date - Part 2
+- Date formatting and parsing using SimpleDateFormat
+- Create a java.util.Date and format it
+- Demo of java.sql.Date
+- Demo of java.util.Calendar - Part 1
+- Demo of java.util.Calendar - Part 2
+- TimeZone specific Date and Time
+- NewYork Date and Time using GregorianCalendar
+- Introduction to new Date & Time API from Java 8
+- The of() methods in java.time Date and Time API
+- The from() & withXxx() methods in java.time Date and Time API
+- The toXxx() & atXxx() methods in java.time Date and Time API
+- The getXxx(), plusXxx() and minusXxx() methods in new Date & Time API
+- New DateTime API operations
+- Introduction to Instant and Duration in java.time Date and Time API
+- Demo of Instant and Duration in java.time Date and Time API
+- Period in java.time Date and Time API
+- The multipliedBy(), dividedBy() & negated() methods
+- The truncatedTo() method
+- Demo of ZoneId, ZonedDateTime
+- Demo of ZoneOffset
+- Demo of OffsetDateTime and OffsetTime
+- Demo of Day Light Saving with ZonedDateTime
+- Conference Call scheduling between two teams located in different time zones
+- Non-ISO Calendars in java.time Date and Time API
+- Formatting Dates and Times using DateTimeFormatter
+- Parsing Dates and Times using DateTimeFormatter
+- Formatting and Parsing of the Date Time values
+- Funny memes around Java Date and Time APIs
+- DETAILS OF SOURCE CODE AND PDF CONTENT
+
+## Functional Programming
+- Introduction to Functional Programming
+- Imperative style vs functional style programming
+- What are lambda expressions and their syntax
+- How to build Lambda expressions
+- Deep dive on Functional Interfaces
+- How Functional Interface & Lambda expressions are linked - Part 1
+- How Functional Interface & Lambda expressions are linked - Part 2
+- Functional Interface and Lambda expression to transform Strings
+- Anonymous inner class in the place of lambda expressions
+- Predefined Functional interfaces inside JDK
+- Deep dive on Predicate functional interface - Part 1
+- Deep dive on Predicate functional interface - Part 2
+- Filtering a List of Custom Objects
+- Deep dive on Function functional interface
+- Transforming a List of Strings
+- Deep dive on UnaryOperator interface
+- Incrementing a List of Integers
+- Deep dive on Consumer interface
+- String List Processing using Consumer interface
+- Deep dive on Supplier interface
+- Identify Current Day using Supplier
+- Deep dive on BiFunctional Interfaces - Part 1
+- Deep dive on BiFunctional Interfaces - Part 2
+- Primitive Type functional interfaces - Theory
+- Primitive Type functional interfaces - Demo
+- Deep dive on Lexical Scoping of Lambda expressions
+- this and super inside lambda expression
+- Funny memes around Functional Programming
+- DETAILS OF SOURCE CODE AND PDF CONTENT
+
+## Method References
+- Introduction to Method References
+- Demo of Static Method Reference
+- Demo of Instance Method Reference
+- Demo of Instance method Reference using Class type
+- Demo of Constructor Reference
+- DETAILS OF SOURCE CODE AND PDF CONTENT
+
+## Stream API
+- Introduction to java.util.stream API
+- Creating a Stream from collections - Part 1
+- Creating a Stream from collections - Part 2
+- Streams have no storage
+- Introduction to Streams Pipeline
+- Demo of Streams map() method
+- Introduction to Streams flatMap() method
+- Demo of Streams flatMap() method
+- Demo of Streams filter() method
+- Demo of Streams limit() method
+- Demo of Streams skip() method
+- Streams are traversable only once
+- Introduction to Streams reduce() method
+- Demo of Streams reduce() method
+- Demo of Streams collect() method
+- Demo of Streams collectingAndThen() method
+- Demo of Streams groupingBy() and partitioningBy() method
+- Finding and Matching methods in Streams
+- Quick revision about stream pipeline
+- Deep dive on parallel streams and demo
+- Collections Vs Streams
+- DETAILS OF SOURCE CODE AND PDF CONTENT
+
+## Optional Class
+- Introduction to Optional class
+- Demo of Optional - Part 1
+- Demo of Optional - Part 2
+- Demo of ifPresent, ifPresentOrElse, orElse, orElseGet methods
+- Demo of orElseThrow, map, filter methods
+- Quick tip to filter null elements with Stream API
+- DETAILS OF SOURCE CODE AND PDF CONTENT
+
+## MultiThreading
+- What is MultiThreading
+- How a program or a software executes inside a computer
+- Parallel vs Concurrent Execution
+- How multiple threads improve performance
+- Creating Threads in Java - Part 1
+- Creating Threads in Java - Part 2
+- MultiThreading Demo Program
+- Demo of Thread methods getId, threadId, getName, setName, currentThread, sleep
+- Demo of Thread method join, getPriority, setPriority
+- Demo of wait(), notify(), notifyAll() - Part 1
+- Demo of wait(), notify(), notifyAll() - Part 2
+- Introduction to Race condition & synchronized keyword
+- Demo of synchronized methods and blocks
+- Introduction to volatile keyword
+- Demo of volatile keyword
+- Introduction to Deadlock
+- Demo Deadlock & possible fixes
+- Introduction to Virtual Threads - Part 1
+- Introduction to Virtual Threads - Part 2
+- Introduction to Virtual Threads - Part 3
+- Demo of Virtual Threads
+- DETAILS OF SOURCE CODE AND PDF CONTENT
+
+## Java 22-24 Features
+- Launch Multi-File Source-Code Programs
+- Unnamed Variables & Patterns - Theory
+- Unnamed Variables & Patterns - Demo
+- Markdown Documentation Comments - Part 1
+- Markdown Documentation Comments - Part 2
+- Introduction to Stream Gatherers API
+- Getting to know the basic syntax of using Gatherer interface
+- Using Gatherer.of() to create an intermediate operation
+- Gatherers with Mutable State & Initializer
+- Finisher in a Stream Gatherer
+- Parallel Gatherers - Theory
+- Parallel Gatherers - Demo
+- Interrupting and Chaining Gatherers
+- fold(),scan(),mapConcurrent() methods in Gatherers
+- windowFixed, windowSliding methods in Gatherers
+- DETAILS OF SOURCE CODE AND PDF CONTENT
+
+## Java 25 Features
+- Module Import Declarations
+- Compact Source Files and Instance Main Methods - Part 1
+- Compact Source Files and Instance Main Methods - Part 2
+- Flexible Constructor Bodies - Part 1
+- Flexible Constructor Bodies - Part 2
+- Scoped Values - Part 1
+- Scoped Values - Part 2
+- Scoped Values - Part 3
+- Performance improvements using AOT - Theory
+- Performance improvements using AOT - Demo

@@ -482,7 +482,7 @@ class School {
     |         |          |          |    |         |
     |    Abstraction  Encapsulation  |  IS-A    HAS-A
     |    (Interface)  (Class+Access) |   |         |
-    |         |          |          |    |    ┌────┴────┐
+    |         |          |           |   |    ┌────┴────┐
     |    Inheritance  Polymorphism   |   | Aggregation Composition
     |    (extends)       |           |   |   (weak)    (strong)
     |         |     ┌────┴────┐      |   |
